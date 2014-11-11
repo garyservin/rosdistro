@@ -2886,7 +2886,10 @@ wx-common:
 wxpython:
   arch: [wxpython]
   centos: [wxPython-devel]
-  debian: [python-wxgtk2.8]
+  debian:
+    jessie: [python-wxgtk3.0]
+    sid: [python-wxgtk3.0]
+    wheezy: [python-wxgtk2.8]
   fedora: [wxPython-devel]
   freebsd: [py27-wxPython]
   gentoo: [dev-python/wxpython]
@@ -2896,7 +2899,10 @@ wxpython:
   ubuntu: [python-wxgtk2.8]
 wxwidgets:
   arch: [wxgtk]
-  debian: [libwxgtk2.8-dev]
+  debian:
+    jessie: [libwxgtk3.0-dev]
+    sid: [libwxgtk3.0-dev]
+    wheezy: [libwxgtk2.8-dev]
   fedora: [wxGTK-devel]
   freebsd: [wxgtk2]
   gentoo: [x11-libs/wxGTK]
